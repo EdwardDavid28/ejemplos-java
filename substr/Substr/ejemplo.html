@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saludo de Persona</title>
+</head>
+<body>
+    <h1>Información de Persona</h1>
+    <!-- Elemento donde se mostrará el saludo -->
+    <p id="saludo"></p>
+
+    <script>
+        const persona = {
+            nombre: "Juan",
+            edad: 30,
+            saludar() {
+                return `Hola, mi nombre es ${this.nombre} y tengo ${this.edad} años.`;
+            }
+        };
+        
+        // Mostrar el saludo en el elemento <p> con id="saludo"
+        document.getElementById("saludo").textContent = persona.saludar();
+    </script>
+</body>
+</html>
